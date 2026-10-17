@@ -103,4 +103,87 @@ On Windows:
 .venv\Scripts\activate
 ```
 
-Install the dependencies required
+Install the dependencies required by the notebooks. For example:
+
+```bash
+pip install qiskit qiskit-aer jupyter
+```
+
+Start Jupyter:
+
+```bash
+jupyter notebook
+```
+
+**Note:** The exact dependencies may vary between notebooks. A pinned `requirements.txt` will be added once the notebook environments have been checked for compatibility.
+
+---
+
+## Concepts explored
+
+### 1. Quantum states and gates
+
+Represent classical characters as computational-basis states and investigate how gates transform those states.
+
+### 2. Superposition and measurement
+
+Use Hadamard and rotation gates to prepare superpositions and explore the probability distributions of measurement outcomes.
+
+### 3. Entanglement and controlled operations
+
+Investigate correlations between qubits belonging to different Knots, and learn how controlled gates create and manipulate joint quantum states.
+
+### 4. Interference
+
+Study how quantum amplitudes combine, producing constructive or destructive interference.
+
+### 5. Reversible string predicates and search
+
+Represent selected string conditions as reversible quantum circuits, then explore how phase oracles and Grover's algorithm can amplify marked states.
+
+---
+
+## Scope and limitations
+
+Quill is an educational project, not a claim that ordinary text encoding provides a quantum speedup.
+
+- Encoding a string in qubits does not, by itself, make text processing faster.
+- A measurement returns a classical outcome and generally does not reveal an entire superposition.
+- Quantum search requires a suitable oracle and a clearly defined search space; classical preprocessing must not be mistaken for quantum search.
+- The current character encoding uses eight-qubit ASCII registers and is not a general solution for arbitrary Unicode text.
+- Simulation results demonstrate circuit behavior, not necessarily the performance of real quantum hardware.
+
+These limitations are part of the learning process: the goal is to understand what quantum circuits actually do, not merely to reproduce familiar text operations with quantum terminology.
+
+---
+
+## Roadmap
+
+- [x] Character encoding and Cord notation
+- [x] Single-qubit gates and character transformations
+- [x] Superposition and rotations
+- [x] Entanglement and controlled operations
+- [x] Quantum interference
+- [x] Reversible string predicates
+- [x] Introductory phase-oracle and search experiments
+- [ ] Audit and standardize the notebooks
+- [ ] Add pinned dependencies and reproducibility checks
+- [ ] Explore more general string encodings and quantum predicates
+
+---
+
+## Contributing
+
+Quill is an evolving learning project. Suggestions, corrections, reproducibility improvements, and educational experiments are welcome.
+
+If you find a mathematical error or a circuit that behaves differently from its explanation, please open an issue with the notebook name, the relevant cell, and the observed result.
+
+---
+
+## License
+
+A license has not yet been selected. Until one is added, the repository should not be assumed to grant permission for unrestricted reuse or redistribution.
+
+---
+
+**Quill — exploring quantum computing, one Knot at a time.**
